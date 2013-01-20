@@ -1,8 +1,0 @@
-//
-// Prefix header for all source files of the 'BingoCardMaker' target in the 'BingoCardMaker' project
-//
-
-#ifdef __OBJC__
-    #import <Cocoa/Cocoa.h>
-    #import "NSArray+Random.h"
-#endif
