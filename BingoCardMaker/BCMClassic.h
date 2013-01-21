@@ -8,11 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "BCMResult.h"
+#import "BCMCard.h"
 
 @interface BCMClassic : NSObject
 
 
+-(BCMCard*)generateCard;
+
 -(BCMResult*)call;
+
 
 @property NSMutableArray *calledResults;
 @property NSMutableArray *remainingResults;
@@ -21,8 +25,8 @@
  * Is the library big enough (75 or more) to have library be split up into B - I - N - G - O columns
  * If not them the call results will just be the word and not have a column prefix.
  */
-@property BOOL columnOriented;
-@property NSArray *library;
+@property (nonatomic) BOOL columnOriented;
+@property (nonatomic, strong) NSArray *library;
 
 
 @end

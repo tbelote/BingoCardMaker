@@ -10,6 +10,7 @@
 		61110E6D16AA74CA00182F27 /* BCMClassic.m in Sources */ = {isa = PBXBuildFile; fileRef = 61110E6C16AA74C900182F27 /* BCMClassic.m */; };
 		61110E7016AA755200182F27 /* BCMResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 61110E6F16AA755200182F27 /* BCMResult.m */; };
 		61110E7416AB64B900182F27 /* NSArray+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 61110E7216AB64B900182F27 /* NSArray+Random.m */; };
+		61110E8216ACBC3E00182F27 /* BCMCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 61110E8116ACBC3E00182F27 /* BCMCard.m */; };
 		6141E21616920393007B534E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6141E21516920393007B534E /* Cocoa.framework */; };
 		6141E22016920393007B534E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6141E21E16920393007B534E /* InfoPlist.strings */; };
 		6141E22216920393007B534E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6141E22116920393007B534E /* main.m */; };
@@ -40,6 +41,9 @@
 		61110E6F16AA755200182F27 /* BCMResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCMResult.m; sourceTree = "<group>"; };
 		61110E7216AB64B900182F27 /* NSArray+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Random.m"; sourceTree = "<group>"; };
 		61110E7316AB64B900182F27 /* NSArray+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Random.h"; sourceTree = "<group>"; };
+		61110E7F16ACBC0B00182F27 /* BCMDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMDocument.h; sourceTree = "<group>"; };
+		61110E8016ACBC3E00182F27 /* BCMCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMCard.h; sourceTree = "<group>"; };
+		61110E8116ACBC3E00182F27 /* BCMCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCMCard.m; sourceTree = "<group>"; };
 		6141E21116920393007B534E /* BingoCardMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BingoCardMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6141E21516920393007B534E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6141E21816920393007B534E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -50,7 +54,6 @@
 		6141E22116920393007B534E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6141E22316920393007B534E /* BingoCardMaker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BingoCardMaker-Prefix.pch"; sourceTree = "<group>"; };
 		6141E22516920393007B534E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		6141E22716920393007B534E /* BCMDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCMDocument.h; sourceTree = "<group>"; };
 		6141E22816920393007B534E /* BCMDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCMDocument.m; sourceTree = "<group>"; };
 		6141E22B16920393007B534E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BCMDocument.xib; sourceTree = "<group>"; };
 		6141E22E16920393007B534E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -90,6 +93,8 @@
 				61110E6C16AA74C900182F27 /* BCMClassic.m */,
 				61110E6E16AA755200182F27 /* BCMResult.h */,
 				61110E6F16AA755200182F27 /* BCMResult.m */,
+				61110E8016ACBC3E00182F27 /* BCMCard.h */,
+				61110E8116ACBC3E00182F27 /* BCMCard.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -147,7 +152,7 @@
 			children = (
 				61110E7116AB64AA00182F27 /* Common */,
 				61110E6916AA749800182F27 /* Model */,
-				6141E22716920393007B534E /* BCMDocument.h */,
+				61110E7F16ACBC0B00182F27 /* BCMDocument.h */,
 				6141E22816920393007B534E /* BCMDocument.m */,
 				6141E22A16920393007B534E /* BCMDocument.xib */,
 				6141E22D16920393007B534E /* MainMenu.xib */,
@@ -302,6 +307,7 @@
 				61110E6D16AA74CA00182F27 /* BCMClassic.m in Sources */,
 				61110E7016AA755200182F27 /* BCMResult.m in Sources */,
 				61110E7416AB64B900182F27 /* NSArray+Random.m in Sources */,
+				61110E8216ACBC3E00182F27 /* BCMCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

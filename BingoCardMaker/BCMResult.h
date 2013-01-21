@@ -14,8 +14,8 @@
 
 -(NSString *) toString;
 
-@property NSView *view;
-@property NSString *text;
-@property NSString *column;
+@property (nonatomic, strong) NSView *view;
+@property (nonatomic, strong) NSString *text;
+@property (nonatomic, strong) NSString *column;
 
 @end
